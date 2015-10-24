@@ -1,4 +1,6 @@
+![build status](https://circleci.com/gh/tmyjoe/autowireble-http.png?circle-token=f1b7a0144d77470b9e1120c7d95ac20d70a32825)
 # Autowireble-http
+
 Autowireble-http is a HTTP client library for Spring IoC Container inspired by [Retrofit](http://square.github.io/retrofit/).
 
 By Autowireble-http, you can easily get autowireble components to execute http request
