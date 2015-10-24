@@ -14,8 +14,13 @@ public interface TestInterface {
     @Host("www.yahoo.co.jp")
     HttpResponse request1(@QueryParam("q") String query);
 
-    @POST("/{path}")
+    @POST("/:path")
     @Scheme("https")
     @Host("example.com")
     HttpResponse request2(@PathParam String path);
+
+    @POST("/:path")
+    @Scheme("https")
+    @Host("example.com")
+    HttpResponse request3(@Body AutowirebleHttpBeanConfigurerTest.TestRequestBody body);
 }

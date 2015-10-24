@@ -51,7 +51,6 @@ public class ActualClient implements InvocationHandler {
         HttpClient client = provider.provide(clazz);
         assertClientNotClosed(client, request);
         logger.trace(request.toString());
-        System.out.println(request.toString());
         return client.execute(request);
     }
 

@@ -55,7 +55,7 @@ abstract public class ArgumentMetaData {
 
         public PathParam(int order, String parameterName) {
             super(order);
-            this.parameterName = "{" + parameterName + "}";
+            this.parameterName = ":" + parameterName;
         }
 
         @Override

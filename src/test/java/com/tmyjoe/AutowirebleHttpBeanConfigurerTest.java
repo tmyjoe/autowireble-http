@@ -1,6 +1,5 @@
 package com.tmyjoe;
 
-import org.apache.http.HttpResponse;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,7 +23,16 @@ public class AutowirebleHttpBeanConfigurerTest {
 
     @Test
     public void test() throws IOException {
-        HttpResponse response = testBean.request1("");
-        HttpResponse response2 = testBean.request2("");
+        testBean.request1("");
+        testBean.request2("");
+
+        TestRequestBody body = new TestRequestBody();
+        body.name = "name";
+        testBean.request3(body);
+    }
+
+
+    public static class TestRequestBody {
+        public String name;
     }
 }
