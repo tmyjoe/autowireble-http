@@ -40,7 +40,7 @@ Now, you can autowire the interface defined in Step1
 @Service
 public class GithubRepositoryService {
 
-  @autowire
+  @Autowire
   private GithubService githubService;
 
   public List<GithubRepo> getRepository(Owner owner, String repoName) {
